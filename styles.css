@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: url('assets/background.svg');
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 70px;  
+}
+
+.col:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fade-in 3s forwards;
+}
+
+h6 {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+}
+
+h1 span:last-child {
+  background: -webkit-linear-gradient(45deg,#F44160, #A887F5 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: .8rem;
+  margin: 45px 0;
+  color: #6a6c78;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#price {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  width: 60px;
+}
+
+#color-picker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color-picker-options {
+  width: 40px;
+  height: 7px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 7px 45px 0px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.color-picker-options, button:hover {
+  opacity: .7;
+}
+
+#color_picker_1 {
+  background-color: #CF2B44;
+  margin: 0 35px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: .2s;
+}
+
+#color_picker_2 {
+  background-color: #FFFFFF;
+  margin-right: 35px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: .4s;
+}
+
+#color_picker_3 {
+  background-color: #BFA992;
+  margin-right: 35px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: .6s;
+}
+
+#color_picker_4 {
+  background-color: #000000;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: .8s;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid #A887F5;
+  border-radius: 5px;
+  box-shadow: 0 4px 14px 0 rgb(168 135 245 / 10%);
+  background-color: #1A2531;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 60px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.col:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#apple-watch {
+  max-width: 70%;
+  transform: rotate(20deg);
+  filter: drop-shadow(0 0 12rem rgb(255, 255, 255, 0.5));
+  animation: apple-watch 3s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apple-watch {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: skew(-30deg, 35deg);
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    padding: 40px;
+  }
+
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: .5rem;
+    margin: 25px 0;
+    color: #6a6c78;
+  }
+
+  #color-picker {
+    margin-top: 10px;
+  }
+
+  #color_picker_1 {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  #color_picker_2 {
+    margin-right: 15px;
+  }
+
+  #color_picker_3 {
+    margin-right: 15px;
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 7px;
+    width: 120px;
+  }
+
+  #apple-watch {
+    margin-top: 80px;
+    max-width: 50%;
+  }
+}
