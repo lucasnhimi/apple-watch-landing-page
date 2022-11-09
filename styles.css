@@ -1,3 +1,16 @@
+:root {
+  --c-white: #FFFFFF;
+  --c-pink: #F44160;
+  --c-purple: #A887F5;
+  --c-gray: #6a6c78;
+  --c-red: #CF2B44;;
+  --c-beige: #BFA992;
+  --c-black: #000000;
+  --bg-black: #1A2531;
+  --color-picker-margin: 35px;
+  --color-picker-animation: fade-in 1s forwards;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Inter';
@@ -38,17 +51,17 @@ main {
 }
 
 h6 {
-  color: #FFFFFF;
+  color: var(--c-white);
   margin-bottom: 30px;
 }
 
 h1 {
   font-size: 3.5rem;
-  color: #FFFFFF;
+  color: var(--c-white);
 }
 
 h1 span:last-child {
-  background: -webkit-linear-gradient(45deg,#F44160, #A887F5 90%);
+  background: -webkit-linear-gradient(45deg, var(--c-pink), var(--c-purple) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,7 +69,7 @@ h1 span:last-child {
 p {
   font-size: .8rem;
   margin: 45px 0;
-  color: #6a6c78;
+  color: var(--c-gray);
 }
 
 .info-container {
@@ -67,7 +80,7 @@ p {
 
 #price {
   font-size: 1.1rem;
-  color: #FFFFFF;
+  color: var(--c-white);
   width: 60px;
 }
 
@@ -90,43 +103,43 @@ p {
 }
 
 #color_picker_1 {
-  background-color: #CF2B44;
-  margin: 0 35px;
+  background-color: var(--c-red);
+  margin: 0 var(--color-picker-margin);
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: var(--color-picker-animation);
   animation-delay: .2s;
 }
 
 #color_picker_2 {
-  background-color: #FFFFFF;
-  margin-right: 35px;
+  background-color: var(--c-white);
+  margin-right: var(--color-picker-margin);
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: var(--color-picker-animation);
   animation-delay: .4s;
 }
 
 #color_picker_3 {
-  background-color: #BFA992;
-  margin-right: 35px;
+  background-color: var(--c-beige);
+  margin-right: var(--color-picker-margin);
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: var(--color-picker-animation);
   animation-delay: .6s;
 }
 
 #color_picker_4 {
-  background-color: #000000;
+  background-color: var(--c-black);
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: var(--color-picker-animation);
   animation-delay: .8s;
 }
 
 button {
   padding: 10px;
-  border: 2px solid #A887F5;
+  border: 2px solid var(--c-purple);
   border-radius: 5px;
   box-shadow: 0 4px 14px 0 rgb(168 135 245 / 10%);
-  background-color: #1A2531;
-  color: #FFF;
+  background-color: var(--bg-black);
+  color: var(--c-white);
   font-weight: bold;
   margin-top: 60px;
   width: 150px;
@@ -143,7 +156,7 @@ button {
   max-width: 70%;
   transform: rotate(20deg);
   filter: drop-shadow(0 0 12rem rgb(255, 255, 255, 0.5));
-  animation: apple-watch 3s forwards;
+  animation: transform-apple-watch 3s forwards;
 }
 
 @keyframes fade-in {
@@ -155,7 +168,7 @@ button {
   }
 }
 
-@keyframes apple-watch {
+@keyframes transform-apple-watch {
   0% {
     transform: rotate(10deg);
   }
@@ -180,7 +193,7 @@ button {
   p {
     font-size: .5rem;
     margin: 25px 0;
-    color: #6a6c78;
+    color: var(--c-gray);
   }
 
   #color-picker {
@@ -208,6 +221,6 @@ button {
 
   #apple-watch {
     margin-top: 80px;
-    max-width: 50%;
+    max-width: 40%;
   }
 }

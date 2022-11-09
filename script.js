@@ -1,24 +1,24 @@
-const colorOptions = [
+const productOptions = [
   {
     id: 1,
     src: "/assets/watch-1.png",
-    price: 270,
+    price: "5.299",
   },
   {
     id: 2,
     src: "/assets/watch-2.png",
-    price: 350,
+    price: "5.500",
   },
   {
     id: 3,
     src: "/assets/watch-3.png",
-    price: 300,
+    price: "5.400",
   },
   {
     id: 4,
     color: "#000000",
     src: "/assets/watch-4.png",
-    price: 350,
+    price: "5.500",
   },
 ];
 
@@ -31,7 +31,7 @@ function selectOption(option) {
   element_appleWatch.src = option.src;
 
   setTimeout(() => {
-    element_appleWatch.style = "animation: apple-watch 3s forwards";
+    element_appleWatch.style = "animation: transform-apple-watch 3s forwards";
   }, 10);
 
   const element_price = document.getElementById("price");
@@ -46,7 +46,7 @@ function renderProductOptions() {
 
   if (!element) return;
 
-  colorOptions.map(function (option) {
+  productOptions.map(function (option) {
     const newDiv = document.createElement("div");
 
     const id = `color_picker_${option.id}`;
