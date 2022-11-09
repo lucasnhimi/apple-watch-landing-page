@@ -15,4 +15,4 @@ Projeto de página do Apple Watch Series 8 feita com HTML, CSS, e JS.
 
 #### ~ Preview ~ 
 \
-<img src="github-assets/banner.png" />
+<img src="github-assets/Banner.png" />
