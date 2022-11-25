@@ -1,7 +1,5 @@
 # Landing Page - Apple Watch
 
-Projeto de página do Apple Watch Series 8 feita com HTML, CSS, e JS.
-
 <p align="center">
   <a aria-label="Linkedin wazana.dev" href="https://www.linkedin.com/company/wazana-dev/">
     <img src="https://img.shields.io/badge/wazana--dev-333.svg?style=for-the-badge&logo=linkedin&labelColor=0A66C2">
@@ -26,7 +24,7 @@ Projeto de página do Apple Watch Series 8 feita com HTML, CSS, e JS.
 
 ## Introdução
 
-Este é um projeto de uma Landing Page com objetivo de utilizar os recursos de HTML, CSS e JavaScript.
+Projeto de página do Apple Watch Series 8 feita com HTML, CSS, e JS.
 
 ### Nível
 
