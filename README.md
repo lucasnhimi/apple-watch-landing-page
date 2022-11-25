@@ -28,7 +28,7 @@ Projeto de página do Apple Watch Series 8 feita com HTML, CSS, e JS.
 
 ### Nível
 
-- [x] - Básico
+- [x] Básico
 
 ## Tecnologias utilizadas
 
